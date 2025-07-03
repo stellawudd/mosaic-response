@@ -1,0 +1,131 @@
+{
+      "groups": [
+        {
+          "group_name": "body",
+          "sections": [
+            {
+              "section_id": "",
+              "content": [
+                "vertical-container-1"
+              ],
+              "logging": null
+            }
+          ],
+          "logging": null
+        }
+      ],
+      "data": [
+        {
+          "lego_id": "vertical-container-1",
+          "lego_type": "common.layout.vertical_container",
+          "content": {
+            "spacing": {
+              "value": "USAGE_SPACE_SMALL"
+            },
+            "border": {
+              "border_radius": {
+                "value": "USAGE_BORDER_RADIUS_NONE"
+              }
+            },
+            "background_color": {
+              "value": "USAGE_COLOR_BACKGROUND_DEFAULT"
+            },
+            "alignment": "VERTICAL_ALIGNMENT_LEADING",
+            "components": [
+              "image_carousel"
+            ],
+            "frame": {
+              "width": {
+                "value": "VALUE_DIMENSION_FILL"
+              },
+              "height": {
+                "value": "VALUE_DIMENSION_FILL"
+              }
+            }
+          },
+          "logging": null,
+          "failure_mode": "OPTIONAL",
+          "extensions": []
+        },
+        {
+          "lego_id": "image_carousel",
+          "lego_type": "cx.dine_out.horizontal_image_carousel",
+          "content": {
+            "image_component_ids": [
+                "image-vertical-container-1",
+                "image-vertical-container-1"
+            ],
+            "actions" : [
+                {
+                "action_type" : "common.deep_link_navigate",
+                "content" : {
+                  "path" : "https://doordash.com/dineout"
+                }
+              }
+            ],
+            "frame": {
+                "height": {
+                    "absolute": 200
+                },
+                "width": {
+                    "value": "VALUE_DIMENSION_FILL"
+                }
+            }
+          }
+        },
+        {
+          "lego_id": "image-vertical-container-1",
+          "lego_type": "common.layout.vertical_container",
+          "content": {
+            "spacing": {
+              "value": "USAGE_SPACE_NONE"
+            },
+            "border": {
+              "border_radius": {
+                "value": "USAGE_BORDER_RADIUS_LARGE"
+              }
+            },
+            "background_color": {
+              "value": "USAGE_COLOR_BACKGROUND_DEFAULT"
+            },
+            "alignment": "VERTICAL_ALIGNMENT_LEADING",
+            "components": [
+              "image-1"
+            ],
+            "frame": {
+                "height": {
+                    "value": "VALUE_DIMENSION_FILL"
+                },
+                "width": {
+                    "value": "VALUE_DIMENSION_FILL"
+                }
+            }
+          },
+          "logging": null,
+          "failure_mode": "OPTIONAL",
+          "extensions": []
+        },
+        {
+            "lego_id": "image-1",
+            "lego_type": "common.shared.image",
+            "content": {
+                "remote": {
+                "uri": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,format=auto/https://doordash-static.s3.amazonaws.com/media/store/header/b9c567bc-eb96-4ee5-aac2-5ecf8a234e83.jpg"
+                },
+                "description": "DoorDash Logo",
+                "fit_type": "FIT_TYPE_COVER",
+                "frame": {
+                "height": {
+                    "absolute": 200
+                },
+                "width": {
+                    "value": "VALUE_DIMENSION_FILL"
+                }
+            },
+                "failure_mode": "REQUIRED"
+            }
+        }
+      ],
+      "logging": null,
+      "pagination": null
+    }
