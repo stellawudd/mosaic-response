@@ -1,0 +1,97 @@
+{
+      "groups": [
+        {
+          "group_name": "body",
+          "sections": [
+            {
+              "section_id": "",
+              "content": [
+                "vertical-container-1"
+              ],
+              "logging": null
+            }
+          ],
+          "logging": null
+        }
+      ],
+      "data": [
+        {
+          "lego_id": "vertical-container-1",
+          "lego_type": "common.layout.vertical_container",
+          "content": {
+            "spacing": {
+              "value": "USAGE_SPACE_SMALL"
+            },
+            "border": {
+              "border_radius": {
+                "value": "USAGE_BORDER_RADIUS_NONE"
+              }
+            },
+            "background_color": {
+              "value": "USAGE_COLOR_BACKGROUND_DEFAULT"
+            },
+            "alignment": "VERTICAL_ALIGNMENT_LEADING",
+            "components": [
+              "button_toggle_group"
+            ],
+            "frame": {
+              "width": {
+                "value": "VALUE_DIMENSION_FILL"
+              },
+              "height": {
+                "value": "VALUE_DIMENSION_FILL"
+              }
+            }
+          },
+          "logging": null,
+          "failure_mode": "OPTIONAL",
+          "extensions": []
+        },
+        {
+          "lego_id": "button_toggle_group",
+          "lego_type": "common.prism.button_toggle_group",
+          "content": {
+            "data" : [
+                {
+                  "label": "Walk-in",
+                  "actions" : [
+                    {
+                      "type": "cx.dine_out.filter_toggle_item",
+                      "content": {
+                        "filter_id": "isReservation",
+                        "option_id": "false"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "Reservation",
+                  "actions": [
+                    {
+                      "type": "cx.dine_out.filter_toggle_item",
+                      "content": {
+                        "filter_id": "isReservation",
+                        "option_id": "true"
+                      }
+                    }
+                  ]
+                }
+              ],
+            "initial_selection" : "Walk-in",
+            "size" : {
+                "value": "VALUE_BUTTON_SIZE_MEDIUM"
+            },
+            "type" : {
+                "value": "VALUE_BUTTON_TYPE_PRIMARY_UNSPECIFIED"
+            },
+            "full_width" : false,
+            "is_disabled" : false,
+            "actions" : [
+                
+            ]
+          }
+        }
+      ],
+      "logging": null,
+      "pagination": null
+    }
