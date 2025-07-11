@@ -1,0 +1,127 @@
+
+	{
+		"groups": [{
+			"group_name": "page",
+			"sections": [ {
+				"section_id": "footer",
+				"content": ["lazy_scrollable_horizontal_container"],
+				"logging": null
+			}],
+			"logging": null
+		}],
+		"data": [
+		{
+			"lego_id": "labelSelection",
+			"lego_type": "cx.dine_out.toggle_group",
+			"content": {
+				"options": [{
+					"identifier": "1",
+					"label": "1",
+					"is_preselected": false,
+					"actions": [{
+						"action_type": "cx.dine_out.toggle_group.option_picked",
+						"content": {
+							"option_id": "1"
+						}
+					}]
+				},
+				{
+					"identifier": "2",
+					"label": "2",
+					"is_preselected": false,
+					"actions": [{
+						"action_type": "cx.dine_out.toggle_group.option_picked",
+						"content": {
+							"option_id": "2"
+						}
+					}]
+				},
+				{
+					"identifier": "3",
+					"label": "3",
+					"is_preselected": true,
+					"actions": [{
+						"action_type": "cx.dine_out.toggle_group.option_picked",
+						"content": {
+							"option_id": "3"
+						}
+					}]
+				},
+				{
+					"identifier": "4",
+					"label": "4",
+					"is_preselected": false,
+					"actions": [{
+						"action_type": "cx.dine_out.toggle_group.option_picked",
+						"content": {
+							"option_id": "4"
+						}
+					}]
+				},
+				{
+					"identifier": "5",
+					"label": "5",
+					"is_preselected": false,
+					"actions": [{
+						"action_type": "cx.dine_out.toggle_group.option_picked",
+						"content": {
+							"option_id": "5"
+						}
+					}]
+				}
+				
+			],
+				"should_show_separator": false,
+				"spacing": {
+					"value": "USAGE_SPACE_X_SMALL"
+				},
+				"direction": "DIRECTION_HORIZONTAL",
+				"option_selection_max_count": 1.0,
+				"toggle_control_style": {
+					"circular_single": {
+						"highlight_styling": {
+							"background_style": {
+								"selected_color": {
+									"value": "USAGE_COLOR_BACKGROUND_SELECTED"
+								},
+								"unselected_color": {
+									"value": "USAGE_COLOR_BACKGROUND_STRONG_DEFAULT"
+								}
+							},
+							"foreground_style": {
+								"selected_color": {
+									"value": "USAGE_COLOR_TEXT_INVERSE_DEFAULT"
+								},
+								"unselected_color": {
+									"value": "USAGE_COLOR_TEXT_DEFAULT"
+								}
+							}
+						},
+						"typography": {
+							"value": "USAGE_TYPE_LABEL_LARGE_STRONG"
+						},
+						"diameter": 48
+					}
+				}
+			},
+			"logging": null,
+			"failure_mode": "OPTIONAL",
+			"extensions": []
+		},
+		{
+    "lego_id": "lazy_scrollable_horizontal_container",
+    "lego_type": "cx.dine_out.layout.lazy_scrollable_horizontal_container",
+    "content": {
+      "spacing": {
+        "value": "USAGE_SPACE_NONE"
+      },
+      "components": ["labelSelection"],
+      "has_scroll_indicator": false
+    },
+    "failure_mode": "OPTIONAL",
+    "extensions": [],
+    "actions": []
+  }],
+		"logging": null,
+		"pagination": null
+	}
